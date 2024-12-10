@@ -1,0 +1,18 @@
+[package]
+name = "aligned-task-scheduler"
+version = "0.1.0"
+edition = "2021"
+authors = ["starry-ABG <johnstarrysky@gmail.com>"]
+description = "A scheduler that runs tasks at exact minute intervals with an optional offset, ensuring tasks are aligned to precise time boundaries."
+license = "MIT"
+repository = "https://github.com/starry-ABG/aligned-task-scheduler"
+documentation = "https://docs.rs/aligned-task-scheduler"
+readme = "README.md"
+
+[dependencies]
+tokio = {version = "1", features = ["macros", "rt-multi-thread", "time"] }
+
+[lib]
+
+[[bin]]
+name = "aligned-task-scheduler"
